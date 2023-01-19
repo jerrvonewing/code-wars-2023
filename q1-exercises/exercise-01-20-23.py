@@ -20,17 +20,16 @@ print("The city is", city, " and the price is", price, ". You need at least", hi
 # String Escape Sequences
 ########################################################################
 # Set the message variable equal to any string containing a new-line escape sequence
-message = ""
-
+message = "Hello, world!\n"
 
 # Add a string to the mountains variable that when printed results in: /\/\/\
 # You will need to use an escape sequence more than once!
-mountains = ""
-
+mountains = "/\/\/\\"
+print(mountains)
 
 # Set the quotation variable to any string that contains an escaped double quotation mark
-
-quotation = ""
+quotation = "\"Hello world\""
+print(quotation)
 
 # Exercise 5: Lesson 53
 # String Concatenation Exercise
