@@ -9,3 +9,13 @@ first = 'Walter'
 last = 'White'
 formatted = "First Name: {first}, Last Name: {last}".format(first=first, last=last)
 print(formatted)
+
+# Check if choice is 7
+from random import randint
+choice = randint(1,10)
+
+if choice == 7:
+   print("Lucky you!") 
+else:
+    print("Not so lucky!")
+print(choice)
