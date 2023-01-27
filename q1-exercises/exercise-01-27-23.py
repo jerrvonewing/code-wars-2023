@@ -19,3 +19,15 @@ if choice == 7:
 else:
     print("Not so lucky!")
 print(choice)
+
+# Assigns a random value as the food choice
+from random import choice
+food = choice(['apple','grape','bacon','steak','worm','dirt'])
+
+# My code
+if (food == 'apple' or food == 'grape'):
+    print("fruit")
+if (food == 'bacon' or food == 'steak'):
+    print("meat")
+else:
+    print("yuck!")
