@@ -31,3 +31,24 @@ if (food == 'bacon' or food == 'steak'):
     print("meat")
 else:
     print("yuck!")
+
+# Checks if value is positive or negative
+
+from random import randint
+x = randint(-100,100)
+while x == 0:
+    x = randint(-100,100)
+
+y = randint(-100,100)
+while y == 0:
+    y = randint(-100,100)
+
+# My code
+if(x > 0 and y > 0):
+    print("both positive")
+if(x < 0 and y < 0):
+    print("both negative")
+if(x > 0 and y < 0):
+    print("x is positive and y is negative")
+if(x < 0 and y > 0):
+    print("x is negative and y is positive")
