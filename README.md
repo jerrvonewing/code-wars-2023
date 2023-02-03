@@ -1,1 +1,3 @@
-# code-wars-2023
+# Code Wars of FHLBC
+
+## Group of bank employees looking to learn and discuss coding topics
