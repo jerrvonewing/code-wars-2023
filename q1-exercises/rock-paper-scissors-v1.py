@@ -2,33 +2,54 @@ print("Rock...")
 print("Papers...")
 print("Scissors...")
 
-player1 = input("Player 1: Make your move:\t")
-player2 = input("Player 2: Make your move:\t")
-
 def rock_paper_scissors(player1, player2):
-    if(player1 == "rock" and player2 == "paper"):
-        print("Player 2 wins!")
+    # Player 1 Selects Rock
+    if(player1 == "rock"):
+        if(player2 == "scissors"):
+            print("Player 1 wins! You rock!")
+        elif(player2 == "paper"):
+            print("Player 2 wins!")
+        elif(player2 == "rock"):
+            print("It's a draw!")
+        else:
+            print("Someone didn't pick rock, paper, or scissors...")
         return
-    elif(player1 == "paper" and player2 == "rock"):
-        print("Player 1 wins!")
+    # Player 1 Selects Paper
+    elif(player1 == "paper"):
+        if(player2 == "scissors"):
+            print("Player 2 wins!")
+        elif(player2 == "rock"):
+            print("Player 1 wins!")
+        elif(player2 == "paper"):
+            print("It's a draw!")
+        else: 
+            print("Someone didn't pick rock, paper, or scissors...")
         return
-    elif(player1 == "scissors" and player2 == "paper"):
-        print("Player 1 wins!")
-        return
-    elif(player1 == "paper" and player2 == "scissors"):
-        print("Player 2 wins!")
-        return
-    elif(player1 == "rock" and player2 == "scissors"):
-        print("Player 1 wins! You rock!")
-        return
-    elif(player1 == "scissors" and player2 == "rock"):
-        print("Player 2 wins! You rock!")
-        return
-    elif(player1 == player2):
-        print("It's a draw!")
+    # Player 1 Selects Scissors
+    elif(player1 == "scissors"):
+        if(player2 == "scissors"):
+            print("It's a draw!")
+        elif(player2 == "rock"):
+            print("Player 2 wins! You rock!")
+        elif(player2 == "paper"):
+            print("Player 1 wins!")
+        else: 
+            print("Someone didn't pick rock, paper, or scissors...")
         return
     else:
-        print("Someone didn't pick rock, paper, or scissors...")
-        return
+        exit()
 
-rock_paper_scissors(player1, player2)
+def loop():
+    for i in range(1,20):
+        print("")
+
+player1 = input("Player 1: Make your move:\t")
+loop()
+player2 = input("Player 2: Make your move:\t")
+loop()
+while player1 != "quit":
+    rock_paper_scissors(player1, player2)
+    player1 = input("Player 1: Make your move:\t")
+    loop()
+    player2 = input("Player 2: Make your move:\t")
+    loop()
