@@ -39,17 +39,14 @@ def rock_paper_scissors(player1, player2):
     else:
         exit()
 
-def loop():
-    for i in range(1,20):
-        print("")
 
 player1 = input("Player 1: Make your move:\t")
-loop()
+print("\n" * 20)
 player2 = input("Player 2: Make your move:\t")
-loop()
+print("\n" * 20)
 while player1 != "quit":
     rock_paper_scissors(player1, player2)
     player1 = input("Player 1: Make your move:\t")
-    loop()
+    print("\n" * 20)
     player2 = input("Player 2: Make your move:\t")
-    loop()
+    print("\n" * 20)
