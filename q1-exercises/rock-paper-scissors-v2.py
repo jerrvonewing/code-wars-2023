@@ -1,3 +1,5 @@
+import random
+
 print("Rock...")
 print("Papers...")
 print("Scissors...")
@@ -39,26 +41,11 @@ def rock_paper_scissors(player1, player2):
     else:
         exit()
 
-
+choices = ["rock","paper","scissors"]
 player1 = input("Player 1: Make your move:\t")
-if player1 == "quit":
-    exit()
-else:
-    print("\n" * 20)
-player2 = input("Player 2: Make your move:\t")
-if player2 == "quit":
-    exit()
-else:
-    print("\n" * 20)
 while player1 != "quit":
+    player2 = random.choice(choices)
     rock_paper_scissors(player1, player2)
     player1 = input("Player 1: Make your move:\t")
     if player1 == "quit":
         exit()
-    else:
-        print("\n" * 20)
-    player2 = input("Player 2: Make your move:\t")
-    if player2 == "quit":
-        exit()
-    else:
-        print("\n" * 20)
